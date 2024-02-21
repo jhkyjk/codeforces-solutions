@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+#include <cctype>
+
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+
+    while (t--) {
+        int a, b, c;
+        int Ans = 0, Bns = 0, Cns = 0;
+        cin >> a >> b >> c;
+       
+        if (abs(b - c) % 2 == 0)
+            Ans = 1;
+        if (abs(a - c) % 2 == 0)
+            Bns = 1;
+        if (abs(b - a) % 2 == 0)
+            Cns = 1;
+
+        cout << Ans << " " << Bns << " " << Cns << "\n";
+    }
+  
+    return 0;
+}
