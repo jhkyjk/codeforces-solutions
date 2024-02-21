@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <string>
+
+int main()
+{
+    int test;
+    std::cin >> test;
+
+    while (test--)
+    {
+       
+        std::string s; std::cin >> s; 
+        int A=0, B=0;
+        for (char c : s)
+        {
+            if (c == 'A')
+                A++;
+            else
+                B++;
+        }
+        std::cout <<( A > B ? 'A' : 'B' )<< "\n";
+    }
+
+}
